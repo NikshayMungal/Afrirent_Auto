@@ -1,4 +1,4 @@
-# Afrirent Depot Admin — updated application
+# Afrirent Depot Admin — https://afrirentauto-falwguoiohb2vrumpdbmwv.streamlit.app/
 
 This extends the uploaded inventory/depot record app. It retains Record ID, Item Description and Quantity. It does not introduce the vehicle/driver/fuel fields described in the earlier fleet overview.
 
