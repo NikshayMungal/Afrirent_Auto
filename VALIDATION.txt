@@ -1,0 +1,27 @@
+AFRIRENT UPDATE — VALIDATION
+29 September 2026
+
+PASSED
+- Python syntax compilation of app and scheduler.
+- 16 business-logic integration tests using temporary SQLite databases.
+- The same 16 tests also passed with the installed Streamlit dependency environment.
+- Streamlit headless workflow smoke test: startup, record capture, editing,
+  literal search with a bracket, reconciliation, task creation, task completion,
+  PDF preparation, saving a disabled schedule, rejected delete confirmation,
+  and confirmed deletion.
+- PDF tests checked landscape page dimensions, multiple pages, repeated headers,
+  the final record, Unicode Latin text, escaped user text, totals and an empty report.
+
+Streamlit workflow tested with Streamlit 1.64.0, pandas 3.0.6 and ReportLab 4.4.9.
+No real emails were sent. Scheduler delivery tests mocked the SMTP function.
+
+NOT VERIFIED IN THE USER'S ENVIRONMENT
+- Real SMTP authentication, provider acceptance or inbox delivery.
+- Windows Task Scheduler installation, machine availability and credentials.
+- Migration of the user's actual existing depot_records.xlsx.
+- Deployment and persistence on the user's live hosting platform.
+- Browser pixel-level layout or every combination of simultaneous user actions.
+
+The package has not been deployed to the live app. Read README.md before migration
+or enabling automatic emails. General administration remains partly manual:
+the app tracks work and prepares drafts; staff review, approve and perform it.

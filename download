@@ -1,0 +1,6 @@
+.streamlit/secrets.toml
+data/
+*.sqlite3*
+__pycache__/
+.venv/
+depot_records.xlsx
